@@ -166,6 +166,7 @@ class Url
     {
         $url = $this->_url->getUrl('', [
             '_direct' => $this->getUrlPath($identifier, $controllerName),
+            '_type' => 'direct_link',
             '_nosid' => $this->storeId ?: null
         ]);
         return $url;
